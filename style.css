@@ -23,12 +23,17 @@
     border : 1px solid #000;
 }
 
-p {
+/* p {
     background: yellowgreen;
     color: darkgreen;
-}
+} */
 
 .class1 {
     background: red;
+    color: darkgreen;
+}
+
+#p1 {
+    background: yellowgreen;
     color: darkgreen;
 }
