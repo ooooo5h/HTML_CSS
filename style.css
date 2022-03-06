@@ -12,6 +12,6 @@
     color:red;
 }
 
-.tb {
+.tb>thead>tr>td {
     border : 1px solid #000;
 }
