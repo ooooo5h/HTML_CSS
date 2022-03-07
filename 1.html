@@ -37,5 +37,15 @@
                 <option value="Internet Explorer"></option>
             </datalist>
         </form>
+
+        <form oninput="r.value=parseInt(x.value) * parseInt(y.value)">
+            <input type="number" id="x" name="x" value="10">
+            x
+            <input type="number" id="y" name="y" value="20">
+            =
+            <output name="r" for="x y"></output>
+            <br/><br/>
+            <input type="submit">
+        </form>
     </body>
 </html>
