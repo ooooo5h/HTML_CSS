@@ -4,48 +4,8 @@
         <title>웹 페이지 제목</title>
     </head>
     <body>
-        <form name="frame" action="sign.jsp" method="POST">
-            <label for="name">이름</label>
-            <input type="text" id="name" name="name" value="Eunhyung" size="20"><br/>
-            <select id="food" name="food" multiple>
-                <optgroup label="음식">
-                    <option value="pizza" selected>피자</option>
-                    <option value="hamburger" selected>햄버거</option>
-                    <option value="pasta" selected>파스타</option>
-                </optgroup>
-                <optgroup label="후식">
-                    <option value="snak" selected>과자</option>
-                    <option value="fruit" selected>과일</option>
-                    <option value="icecream" selected>아이스크림</option>
-                </optgroup>
-            </select><br/>
-            <textarea name="article" rows="5" cols="20">긴 텍스트 문장을 입력해야할 때 사용되는 태그입니다.(게시판/메모장)</textarea><br/>
-            <button>버튼</button>
-            <fieldset>
-                <legend>개인정보</legend>
-                <label for="name">이름 : </label><br/>
-                <input type="text" id="name" name="name" value="Eunhyung" size="20"><br/>
-                <label for="affiliation">소속 : </label><br/>
-                <input type="text" id="affiliation" name="affiliation" value="무직" size="20"><br/>
-                <input type="submit" value="전송">
-            </fieldset>
-            <input list="browsers">
-            <datalist id="browsers">
-                <option value="Chrome"></option>
-                <option value="Safari"></option>
-                <option value="Opera"></option>
-                <option value="Internet Explorer"></option>
-            </datalist>
-        </form>
-
-        <form oninput="r.value=parseInt(x.value) * parseInt(y.value)">
-            <input type="number" id="x" name="x" value="10">
-            x
-            <input type="number" id="y" name="y" value="20">
-            =
-            <output name="r" for="x y"></output>
-            <br/><br/>
-            <input type="submit">
+        <form>
+            <input type="text" name="text" size="20" placeholder="이름">
         </form>
     </body>
 </html>
