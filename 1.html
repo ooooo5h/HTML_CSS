@@ -8,9 +8,16 @@
             <label for="name">이름</label>
             <input type="text" id="name" name="name" value="Eunhyung" size="20">
             <select id="food" name="food" multiple>
-                <option value="pizza" selected>피자</option>
-                <option value="hamburger" selected>햄버거</option>
-                <option value="pasta" selected>파스타</option>
+                <optgroup label="음식">
+                    <option value="pizza" selected>피자</option>
+                    <option value="hamburger" selected>햄버거</option>
+                    <option value="pasta" selected>파스타</option>
+                </optgroup>
+                <optgroup label="후식">
+                    <option value="snak" selected>과자</option>
+                    <option value="fruit" selected>과일</option>
+                    <option value="icecream" selected>아이스크림</option>
+                </optgroup>
             </select>
         </form>
     </body>
