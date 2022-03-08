@@ -2,26 +2,29 @@
 <html>
     <body>
         <table border="1">
-            <tr>
-                <td>이름</td> 
-                <td>성별</td>
-                <td>음식</td>
-            </tr>
-            <tr>
-                <td>뉴싹</td> 
-                <td>여</td> 
-                <td>떡볶이</td>
-            </tr>
-            <tr>
-                <td>뉴싹1</td>
-                <td>남</td> 
-                <td>삼겹살</td>
-            </tr>
-            <tr>
-                <td>뉴싹2</td> 
-                <td>여</td> 
-                <td>김치볶음밥</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>이름</th> <th>성별</th> <th>음식</th> <th>가격</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>뉴싹</td> <td>여</td> <td>떡볶이</td> <td>3000</td>
+                </tr>
+                <tr>
+                    <td>뉴싹1</td> <td>남</td> <td rowspan="2">김치볶음밥</td> <td rowspan="2">9000</td>
+                </tr>
+                <tr>
+                    <td>뉴싹2</td> <td>여</td>  
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3">합계</td> <td>21000</td>
+                </tr>
+            </tfoot>
         </table>
     </body>
 </html>
