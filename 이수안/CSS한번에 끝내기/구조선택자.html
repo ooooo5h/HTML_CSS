@@ -2,23 +2,35 @@
 <html>
 <head>
     <style>
-        p { background-color: pink; }
-        p:nth-child(1) { font-size: 400%; }
-        p:nth-child(2) { font-size: 350%; }
-        p:nth-child(3) { font-size: 300%; }
-        p:nth-child(4) { font-size: 250%; }
-        p:nth-child(5) { font-size: 200%; }
-        p:nth-child(6) { font-size: 150%; }
-        p:nth-child(7) { font-size: 100%; }
+        th:first-child {border-radius: 10px 0 0 0;}      /*테두리 둥금처리 시작과 끝*/
+        th:last-child {border-radius: 0 10px 0 0;}
+        tr:nth-child(2n) {background-color: skyblue;}  /*짝수 배경색 스카이블루*/
+        tr:nth-child(2n+1) {background-color: yellow;} /*홀수 배경색 노랑*/
+        td:hover {background-color: rebeccapurple;}    /*마우스 갖다대면 배경색 보라*/
     </style>
 </head>
 <body>
-    <p>Hello</p>
-    <p>Hello</p>
-    <p>Hello</p>
-    <p>Hello</p>
-    <p>Hello</p>
-    <p>Hello</p>
-    <p>Hello</p>
+    <table>
+        <tr>
+            <th>Head</th>
+            <th>Head</th>
+            <th>Head</th>
+        </tr>
+        <tr>
+            <td>Body</td>
+            <td>Body</td>
+            <td>Body</td>
+        </tr>
+        <tr>
+            <td>Body</td>
+            <td>Body</td>
+            <td>Body</td>
+        </tr>
+        <tr>
+            <td>Body</td>
+            <td>Body</td>
+            <td>Body</td>
+        </tr>
+    </table>
 </body>
 </html>
