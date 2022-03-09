@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        div {
+            text-align: center;
+        }
+
+        a {
+            font-size: xx-large;
+            margin: 10px;
+        }
+
+        a#link_1:link {
+            color: darkslateblue;   /* 링크1 기본 색깔*/
+        }
+
+        a#link_1:visited {
+            color : orange          /* 링크1 방문했으면 나타낼 색깔*/
+        }
+
+        a#link_1:hover {
+            color: cornflowerblue;  /* 링크1 마우스오버 때 나타낼 색깔*/
+        }
+
+        a#link_2 {
+            color: darkgreen;
+            text-decoration: none;   /*언더바 표시 안됨*/
+        }
+
+        a#link_2:hover {
+            text-decoration: underline;
+            color: limegreen;
+        }
+
+        a#link_2:active {
+            background-color: black;   /*클릭하는 순간 백그라운드 색상이 검정이 됨*/
+        }
+
+        a#link_3:hover, a#link_3:active {
+            background-color: gray;
+        }
+
+        a#link_4:link, a#link_4:visited {
+            border: 3px solid forestgreen;
+            color: black;     /*글자색*/
+            background-color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        a#link_4:hover, a#link_4:active {
+            background-color: forestgreen;
+            color: white;
+        }
+
+        button {
+            background-color: black;
+            color: white;   
+            padding: 5px;
+        }
+
+        button:hover {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <a id="link_1" href="http://www.kakao.com">First Link</a><br><br>
+        <a id="link_2" href="http://www.google.com">Second Link</a><br><br>
+        <a id="link_3" href="http://www.google.com">Third Link</a><br><br>
+        <a id="link_4" href="http://www.google.com">Fourth Link</a><br><br>
+        <button onclick="location.href='http://www.google.com'">Button Link</button>
+    </div>
+</body>
+</html>
