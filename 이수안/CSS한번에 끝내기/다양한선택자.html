@@ -19,6 +19,19 @@
             background-color: aqua;
         }
 
+        h3{
+            color: green;
+        }
+
+        /* 특정 속성 선택자 : h3안에 text라는 속성이 있다면 보라색 지정, 속성=값으로 특정 속성값 선택할수도 있음 */
+        h3[text] {
+            color: purple;
+        }
+
+        /*
+        h3[text="h3_text"] {
+            color: aqua;
+        }*/
         
     </style>
 </head>
@@ -31,5 +44,9 @@
     <h1 class="class1">class1인 h1태그안의 내용</h1>
     <h2 class="class1">class1인 h2태그안의 내용</h2>
     
+    <h3>h3</h3>
+    <h3 text="h3_text">text=h3_text 속성이 들어간 h3태그</h3>
+    <h3 text="h3_text2">text=h3_text2 속성이 들어간 또다른 h3태그</h3>
+
 </body>
 </html>
