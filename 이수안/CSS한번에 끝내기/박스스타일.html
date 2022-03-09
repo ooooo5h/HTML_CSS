@@ -13,6 +13,41 @@
             font-weight: bold;
             border: 1px solid red;
         }
+
+        div#box0 {
+            display: block;   /*블락처리로 자동 앞뒤 줄바꿈이 됨*/
+            margin: 40px;
+        }
+
+        div#box1 {
+            margin: 40px;
+            border: 5px solid black;  /*사각형은 그대로고, 바깥으로 border가 붙음*/
+        }
+
+        div#box2 {
+            margin: 40px;  /*외부 여백*/
+            border: 5px solid black;
+            padding: 100px;  /*p태그 안쪽 여백*/
+        }
+
+        div#box3 {
+            margin: 400px 100px 400px 100px;  /*위외부여백 (top, right, bottom, left 시계방향) */
+            /* 아래와 같이 정할 수 있는 걸 한번에 위에서 정함
+            margin-top: 400px;
+            margin-right: 100px;
+            margin-bottom: 400px;
+            margin-left: 100px;
+            */
+            border: 5px solid black;
+            padding: 100px;
+        }
+
+        div#box4 {
+            margin: 40px;
+            border: 5px solid black;
+            padding: 400px 100px 400px 100px;
+        }
+
     </style>
 </head>
 <body>
