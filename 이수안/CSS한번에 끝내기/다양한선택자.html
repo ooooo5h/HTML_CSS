@@ -6,11 +6,30 @@
             color: yellow;
             background-color: black;
         }
+
+        /* 클래스가 'class1'인 모든 태그들에 적용 */
+        .class1 {
+            color: blue;
+            background-color: yellow;
+        }
+
+        /* h1의 클래스가 'class1'인 태그들만 적용 */
+        h1.class1 {
+            color: pink;
+            background-color: aqua;
+        }
+
+        
     </style>
 </head>
 
 <body>
     <p>그냥 p</p>
     <p id="id1">id1인 p태그안의 내용</p>
+
+    <p class="class1">class1인 p태그안의 내용</p>
+    <h1 class="class1">class1인 h1태그안의 내용</h1>
+    <h2 class="class1">class1인 h2태그안의 내용</h2>
+    
 </body>
 </html>
