@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            background-color: skyblue;
+        }
+
+        .inline {
+            display: inline;
+        }
+
+        .block {
+            display: block;
+        }
+        
+        .inline-block {
+            display: inline-block;
+        }
+
+        .none {
+            display: none;     /*display가 none이라서 사라짐*/
+        }
+
+        .visible {
+            visibility: visible;
+        }
+
+        .hidden {
+            visibility: hidden;   /*자리는 만들어두고 감춤*/
+        }
+
+        .half-transparent {
+            opacity: 0.5;
+        }
+
+        .opacity {
+            opacity: 0  /*아예 투명*/
+        }
+
+        .opacity:hover {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>display</h1>
+    <p class="inline">p inline #1</p>   <!--p는 줄바꿈이 원래 들어가는데 class="inline"해서 옆으로 나타남-->
+    <p class="inline">p inline #2</p>
+    <span>span block #1</span>              <!--span은 원래는 줄바꿈이 안들어감-->
+    <span class="block">span block #2</span> <!--class="block"처리해서 줄바꿈이 들어감-->
+    <span class="block">span block #3</span>
+
+    <div class="inline-block">box1</div>
+    <div class="none">box2</div>
+    <div class="inline-block">box3</div>
+    <hr>
+
+    <h1>visibility</h1>
+    <div class="visible">visible</div>
+    <div class="hidden">hidden</div>
+    <div class="visible">visible</div>
+    <hr>
+
+    <h1>opacity</h1>
+    <div class="half-transparent">opacity: 0.5</div>
+    <div class="opacity">opacity: 0</div>
+</body>
+</html>
